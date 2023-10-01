@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', sans-serif; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* HEADER CSS */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10.3rem;
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+a:hover{
+    color: cadetblue;
+}
+nav button{
+   padding-left: 1.5rem;
+   padding-right: 1.5rem; 
+   border-radius: 1.5rem;
+   color: #fff;
+}
+nav button{
+    background-color:cornflowerblue
+}
+nav button:hover{
+    color: darkcyan;
+}
+
+/* MAIN-CSS */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    gap: 6rem;
+    padding-top: 2rem;
+    /* border: 2px solid red; */
+}
+.left img{
+    width: 30rem;
+    height: 20rem;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    /* height: 15rem; */
+    gap: 1.5rem;
+    width: 23rem;
+    height: 22rem;
+    /* border: 2px solid red; */
+}
+.right .product{
+    background-color: #149F39;
+    width: 10rem;
+    color: white;
+    border: none;
+    color: black;
+}
+.right p{
+    font-weight: 600;
+}
+.right .explorenow{
+    width: 10rem;
+    padding: 0.5rem;
+    background-color:#FCC066;
+    color: black;
+    border: none;
+}
+.top button:hover{
+    color: cadetblue;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+.con1{
+    width: 10rem;
+    height: 3rem;
+}
+.bottom img{
+    width: 8rem;
+   /* height: 3rem;  */
+}
+.bottom p{
+   font-size:0.8rem;
+   font-weight: 400;
+}
+.bottom h6{
+    font-size: 1rem;
+}
+
+/* Section */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+section{
+    padding-top: 2rem;
+}
+.menu{
+    background-color: #149F39;
+    border: none;
+    padding: 0.2rem 0.6rem;
+    /* gap: 2rem; */
+}
+.secheading{
+   font-weight: 400;
+   padding-top: 1.5rem;
+   font-size: 2rem;
+}
+.menu:hover{
+    color: cadetblue;
+}
+.all_image{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* border: 0.5px solid black; */
+}
+.top_image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.top_image img{
+    width: 20rem;
+}
+.bottom_image{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.bottom_image img{
+    width:  18rem;
+}
+
+
+/*   MEDIA QUERY 
+1024
+768
+424
+*/
+
+@media screen and (max-width:1024px) {
+    header{
+        gap: 8rem;
+    }
+    nav{
+        gap: 1rem;
+    }
+    .top{
+        /* border: 2px solid red; */
+        width: 46rem;
+        height: 37rem;
+        /* padding-right: 0rem; */
+        gap: 4rem;
+        padding-right: 0.5rem;
+        /* border: 2px solid red; */
+    }
+    .left{
+        /* border: 2px solid red; */
+        width: 30rem;
+    }
+    .left img{
+        width: 20rem;
+    }
+    /* .right{
+        border: 2px solid red;
+    } */
+    .bottom{
+        /* display: flex;
+        align-items: flex-start; */
+        align-items: flex-start;
+        /* border: 2px solid red; */
+        width: 40rem;
+        /* gap: 2rem; */
+        /* height: 8rem; */
+    }
+    .bottom img{
+        width: 4rem;
+    }
+    .bottom p{
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    .con1{
+        /* border: 2px solid red; */
+        width: 10rem;
+        height: 6rem;
+    }
+    .top_image img{
+        width: 13rem;
+    }
+    .bottom_image img{
+        width: 13rem;
+    }
+}
+
+
+@media screen and (max-width:768px) 
+{
+    header{
+        /* border: 2px solid red; */
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 70px; */
+    }
+    .logo img{
+        width: 2.5rem;
+    }
+    nav{
+        gap: 1rem;
+    }
+    a{
+        font-weight: 600;
+        font-size: 0.5rem;
+    }
+    .top{
+        /* border: 2px solid red; */
+        gap: 5rem;
+        width: 35rem;
+    }
+    .left{
+        /* border: 2px solid red; */
+        width: 15rem;
+        align-items: center;margin-left: 3rem;
+    }
+    .left img{
+        width: 15rem;
+    }
+    .bottom{
+        /* border: 2px solid red; */
+        gap: 0.2em;
+        /* align-items: flex-start; */
+    }
+    .bottom img{
+        width: 4rem;
+    }
+    .con1{
+        /* border: 2px solid red; */
+        width: 5rem;
+    }
+    .top_image{
+        gap: 1rem;
+    }
+    .top_image img{
+        width: 8rem;
+    }
+    .bottom_image{
+        gap: 1rem;
+    }
+    .bottom_image img{
+        width: 8rem;
+    }
+}
+@media screen and (max-width:425px) {
+    header{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 20rem;
+        /* border: 2px solid red; */
+        gap: 1rem;
+        height: 43rem;
+        margin-left: 5rem;
+    }
+    .left img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .right{
+        /* border: 2px solid green; */
+        width: 10rem;
+    }
+    .bottom{
+        flex-direction: column;
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.2rem;
+        margin-left: 2rem;
+        gap: 1rem;
+    }
+    .bottom img{
+         width: 7rem;
+    }
+    .con1{
+        /* border: 2px solid red; */
+        width: 7rem;
+        margin-left: 2rem;
+    }
+    .top_image{
+        flex-direction: column;
+    }
+    .bottom_image{
+        flex-direction: column;
+    }
+    .secheading{
+        /* color:  red; */
+        font-size: 1rem;
+        font-weight: 600;
+    }  
+}
